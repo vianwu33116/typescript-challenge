@@ -3,6 +3,12 @@
  * 車輛介面應該包含 brand、model 和 year 三個屬性，分別為字串型別和數字型別。
  */
 
+interface Car{
+    brand: string;
+    model: string;
+    year: number;
+}
+
 /**
  * 獲取車輛的詳細資訊
  * @param vehicle - 車輛物件，應該包含 brand、model 和 year 三個屬性
@@ -11,6 +17,6 @@
  * 輸入: { brand: 'Toyota', model: 'Corolla', year: 2020 }
  * 輸出: 'Toyota Corolla (2020)'
  */
-export function vehicleInfo(vehicle: /* 你的車輛介面 */): string {
-    // 在此實現函式
+export function vehicleInfo(vehicle: Car): string {
+    return `${vehicle.brand} ${vehicle.model} (${vehicle.year})`;
 }
