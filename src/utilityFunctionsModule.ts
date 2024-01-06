@@ -8,7 +8,17 @@
  * @returns - 回傳一個字串，表示格式化後的日期
  */
 export function formatDate(date: Date): string {
-    // 請在此處寫下你的程式碼
+    const formatDate = date.getFullYear() + '-' + timeZeroCheck(date.getMonth()+1) + '-' + timeZeroCheck(date.getDate());
+
+    function timeZeroCheck(num: number) {
+        let str = num.toString();
+        if (str.length === 1) {
+            str = '0' + num;
+        }
+        return str;
+    }
+
+    return formatDate;
 }
 
 /**
@@ -21,5 +31,5 @@ export function formatDate(date: Date): string {
  * @returns - 回傳一個數字，表示四捨五入後的結果
  */
 export function roundNumber(num: number): number {
-    // 請在此處寫下你的程式碼
+    return Math.round(num);
 }

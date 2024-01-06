@@ -11,5 +11,20 @@
  * @returns - 回傳年齡的分類結果
  */
 export function classifyAge(age: number): string {
-    // 請在此處寫下你的程式碼
+    let ans = '';
+    switch(age){
+        case 10:
+            ans = 'Child'
+            break;
+        case 15:
+            ans = 'Teenager'
+            break;
+        case 30:
+            ans = 'Adult'
+            break;
+        case 70:
+            ans = 'Senior'
+            break;
+    }
+    return ans;
 }
