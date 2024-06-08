@@ -1,17 +1,19 @@
 # typescript-challenge
 
-## 開發環境
+A practice of typescript
+
+## Environment
 
 1. Node：v18.16.0
 2. NPM：v9.5.1
 
-## 安裝流程
+## Intallation
 
 ```
-// 安裝 NPM
+// first install
 npm install
-// 開發環境
+// dev mode
 npm run dev
-// 執行測試檔
+// test
 npm run test
 ```
